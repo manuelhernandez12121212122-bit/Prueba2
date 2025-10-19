@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalTech Solutions - Innovación y Excelencia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading" class="loading">
+        <div class="loader"></div>
+        <p>Cargando...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="imagenes/logo.jpg" alt="GlobalTech Solutions">
+                    <span>Auro ¡CONTIGO!</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#identidad">Identidad</a></li>
+                    <li><a href="#interesados">Interesados</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="#contacto" class="cta-button">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Seguridad Vehicular</span>
+                    <span class="title-line">Inteligente</span>
+                </h1>
+                <p class="hero-subtitle">Sistemas avanzados de monitoreo y control vehicular para proteger lo que más importa</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('servicios')">
+                        Nuestros Servicios <i class="fas fa-arrow-down"></i>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contacto')">
+                        <i class="fas fa-shield-alt"></i> Solicitar Demo
+                    </button>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>500+</h3>
+                    <p>Vehículos Protegidos</p>
+                </div>
+                <div class="stat">
+                    <h3>99.8%</h3>
+                    <p>Efectividad en Prevención</p>
+                </div>
+                <div class="stat">
+                    <h3>24/7</h3>
+                    <p>Monitoreo Continuo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p>Soluciones integrales para la seguridad de tu vehículo</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Desarrollo de Software</h3>
+                    <p>Aplicaciones móviles y web personalizadas para el control y monitoreo remoto de tu vehículo desde cualquier dispositivo.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Apps iOS y Android</li>
+                        <li><i class="fas fa-check"></i> Panel web administrativo</li>
+                        <li><i class="fas fa-check"></i> Notificaciones en tiempo real</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>Instalación Profesional</h3>
+                    <p>Instalación especializada de dispositivos GPS, cámaras y sistemas de seguridad por técnicos certificados.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Instalación discreta</li>
+                        <li><i class="fas fa-check"></i> Pruebas de funcionamiento</li>
+                        <li><i class="fas fa-check"></i> Garantía de instalación</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Soporte Técnico 24/7</h3>
+                    <p>Asistencia técnica continua y mantenimiento preventivo para garantizar el óptimo funcionamiento del sistema.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Soporte remoto</li>
+                        <li><i class="fas fa-check"></i> Actualizaciones de software</li>
+                        <li><i class="fas fa-check"></i> Resolución de incidencias</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="productos" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Productos</h2>
+                <p>Tecnología de vanguardia para la protección vehicular</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-badge">Más Popular</div>
+                    <div class="product-icon">
+                        <i class="fas fa-car-crash"></i>
+                    </div>
+                    <h3>Sistema Anti-Robo</h3>
+                    <div class="product-price">
+                        <span class="price">$2,499</span>
+                        <span class="period">/instalación</span>
+                    </div>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Monitoreo GPS en tiempo real</li>
+                        <li><i class="fas fa-check"></i> Inmovilizador remoto</li>
+                        <li><i class="fas fa-check"></i> Alertas de movimiento</li>
+                        <li><i class="fas fa-check"></i> Geocercas personalizadas</li>
+                        <li><i class="fas fa-check"></i> Historial de recorridos</li>
+                    </ul>
+                    <button class="btn btn-primary btn-full" onclick="scrollToSection('contacto')">Solicitar Información</button>
+                </div>
+
+                <div class="product-card featured">
+                    <div class="product-badge">Recomendado</div>
+                    <div class="product-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Paquete Completo</h3>
+                    <div class="product-price">
+                        <span class="price">$4,999</span>
+                        <span class="period">/instalación</span>
+                    </div>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Todo el sistema anti-robo</li>
+                        <li><i class="fas fa-check"></i> 4 cámaras HD interior/exterior</li>
+                        <li><i class="fas fa-check"></i> Control remoto motor/luces</li>
+                        <li><i class="fas fa-check"></i> Sensor de impacto y tilt</li>
+                        <li><i class="fas fa-check"></i> Almacenamiento en la nube 30 días</li>
+                    </ul>
+                    <button class="btn btn-primary btn-full" onclick="scrollToSection('contacto')">Solicitar Instalación</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge">Empresarial</div>
+                    <div class="product-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Flota Empresarial</h3>
+                    <div class="product-price">
+                        <span class="price">Personalizado</span>
+                        <span class="period">/por vehículo</span>
+                    </div>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Gestión de flota completa</li>
+                        <li><i class="fas fa-check"></i> Panel de control empresarial</li>
+                        <li><i class="fas fa-check"></i> Reportes automatizados</li>
+                        <li><i class="fas fa-check"></i> Múltiples usuarios</li>
+                        <li><i class="fas fa-check"></i> Soporte prioritario</li>
+                    </ul>
+                    <button class="btn btn-primary btn-full" onclick="scrollToSection('contacto')">Cotizar Flota</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Identidad -->
+    <section id="identidad" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Identidad Corporativa</h2>
+                <p>Nuestra esencia y valores que nos definen</p>
+            </div>
+
+            <div class="identity-grid">
+                <!-- Misión y Visión -->
+                <div class="identity-card mission-vision">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Proposito</h3>
+                    <p>Proteger lo que más importa mediante tecnología innovadora que brinda tranquilidad y seguridad en cada viaje.</p>
+                </div>
+
+                <div class="identity-card mission-vision">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Misión</h3>
+                    <p>Proveer seguridad proactiva y accesible para vehículos mediante tecnología innovadora, reduciendo la incidencia delictiva y empoderando a los usuarios con control total.</p>
+                </div>
+
+                <div class="identity-card mission-vision">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Visión</h3>
+                    <p>Ser la solución líder en seguridad vehicular en Latinoamérica para 2030, reduciendo los robos de autos en un 30% en las ciudades donde operemos.</p>
+                </div>
+
+                <!-- Valores -->
+                <div class="identity-card values">
+                    <h3>Nuestros Valores</h3>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Seguridad</h4>
+                            <p>La protección de nuestros clientes es nuestra máxima prioridad en cada solución.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Innovación</h4>
+                            <p>Buscamos constantemente nuevas tecnologías para mejorar la seguridad vehicular.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-users"></i>
+                            <h4>Confianza</h4>
+                            <p>Construimos relaciones duraderas basadas en la transparencia y confiabilidad.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-trophy"></i>
+                            <h4>Excelencia</h4>
+                            <p>Nos esforzamos por la más alta calidad en todo lo que hacemos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Organigrama Mejorado con Fotos Reales -->
+            <div class="org-section">
+                <h3>Estructura Organizacional</h3>
+                <div class="org-chart">
+                    <!-- Nivel 1: Director General -->
+                    <div class="org-level level-1">
+                        <div class="org-node director">
+                            <div class="node-content">
+                                <div class="node-avatar">
+                                    <img src="imagenes/equipo/blanca-judith.jpg" alt="Blanca Judith Flores Bonilla">
+                                </div>
+                                <h4>DIRECTOR GENERAL</h4>
+                                <p class="employee-name">Blanca Judith Flores Bonilla</p>
+                                <div class="node-badge">Liderazgo</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Línea de conexión -->
+                    <div class="org-connector"></div>
+
+                    <!-- Nivel 2: Gerentes -->
+                    <div class="org-level level-2">
+                        <div class="org-node gerente">
+                            <div class="node-content">
+                                <div class="node-avatar">
+                                    <img src="imagenes/equipo/jan-ulises.jpg" alt="Jan Ulises Bautista Muñoz">
+                                </div>
+                                <h4>GERENTE DE OPERACIONES</h4>
+                                <p class="employee-name">Jan Ulises Bautista Muñoz</p>
+                                <div class="node-badge">Operaciones</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Línea de conexión -->
+                    <div class="org-connector"></div>
+
+                    
+
+                    <!-- Nivel 3: Equipos -->
+                    <div class="org-level level-3">
+                        <!-- Equipo Técnico -->
+                        <div class="org-node team-node">
+                            <div class="node-content">
+                                <div class="node-avatar team-avatar">
+                                    <img src="imagenes/equipo/erick.jpg" alt="Erick Manuel Desion Hernández">
+                                </div>
+                                <h4>EQUIPO TÉCNICO</h4>
+                                <div class="team-members">
+                                    <div class="member">
+                                        <span class="member-name">Erick Manuel Desion Hernández</span>
+                                        <span class="member-role">Técnico Especialista</span>
+                                    </div>
+                                </div>
+                                <div class="node-badge">Instalación</div>
+                            </div>
+                        </div>
+
+                        <!-- Ventas y Atención al Cliente -->
+                        <div class="org-node team-node">
+                            <div class="node-content">
+                                <div class="node-avatar team-avatar">
+                                    <img src="imagenes/equipo/fernanda-hernandez.jpg" alt="Fernanda Hernández Muñoz">
+                                </div>
+                                <h4>ATENCIÓN AL CLIENTE</h4>
+                                <div class="team-members">
+                                    <div class="member">
+                                        <span class="member-name">Fernanda Hernández Muñoz</span>
+                                        <span class="member-role">Contadora General</span>
+                                    </div>
+                                </div>
+                                <div class="node-badge">Comercial</div>
+                            </div>
+                        </div>
+
+                        <!-- Contabilidad y Finanzas -->
+                        <div class="org-node team-node">
+                            <div class="node-content">
+                                <div class="node-avatar team-avatar">
+                                    <img src="imagenes/equipo/marta-villegas.jpg" alt="Marta Guadalupe Villegas Cano">
+                                </div>
+                                <h4>CONTABILIDAD</h4>
+                                <div class="team-members">
+                                    <div class="member">
+                                        <span class="member-name">Maria Guadalupe Villegas Cano</span>
+                                        <span class="member-role">Especialista en Ventas</span>
+                                    </div>
+                                </div>
+                                <div class="node-badge">Finanzas</div>
+                            </div>
+                        </div>
+
+                        <!-- Agrega esto después del Gerente de Operaciones y antes del nivel 3 -->
+<div class="org-connector"></div>
+
+<!-- Nivel 2.5: Jefe de Limpieza -->
+<div class="org-level level-2">
+    <div class="org-node gerente">
+        <div class="node-content">
+            <div class="node-avatar">
+                <img src="imagenes/equipo/Tellez.jpg" alt="Fernando Gabriel Parra Téllez">
+                <i class="fas fa-broom"></i>
+            </div>
+            <h4>JEFE DE OPERACIONES DE LIMPIEZA Y SERVICIOS GENERALES</h4>
+            <p class="employee-name">Fernando Gabriel Parra Téllez</p>
+            <div class="node-badge">Limpieza y servicios generales</div>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Interesados (AGREGADA DE VUELTA) -->
+    <section id="interesados" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Partes Interesadas</h2>
+                <p>Nuestra red de colaboradores y beneficiarios</p>
+            </div>
+
+            <div class="stakeholders-grid">
+                <div class="stakeholder-card">
+                    <div class="card-header internal">
+                        <i class="fas fa-users"></i>
+                        <h3>Interesados Internos</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="stakeholder-item">
+                            <div class="stakeholder-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="stakeholder-info">
+                                <h4>Directivos y Propietarios</h4>
+                                <p>Liderazgo estratégico y toma de decisiones para el crecimiento sostenible de la empresa.</p>
+                            </div>
+                        </div>
+                        <div class="stakeholder-item">
+                            <div class="stakeholder-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="stakeholder-info">
+                                <h4>Empleados y Colaboradores</h4>
+                                <p>Talento comprometido con la excelencia y desarrollo profesional dentro de la organización.</p>
+                            </div>
+                        </div>
+                        <div class="stakeholder-item">
+                            <div class="stakeholder-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stakeholder-info">
+                                <h4>Inversores y Accionistas</h4>
+                                <p>Socios financieros que confían en nuestro modelo de negocio y crecimiento potencial.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stakeholder-card">
+                    <div class="card-header external">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Interesados Externos</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="stakeholder-item">
+                            <div class="stakeholder-icon">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <div class="stakeholder-info">
+                                <h4>Clientes y Usuarios</h4>
+                                <p>Beneficiarios finales de nuestros servicios, buscando seguridad y tranquilidad vehicular.</p>
+                            </div>
+                        </div>
+                        <div class="stakeholder-item">
+                            <div class="stakeholder-icon">
+                                <i class="fas fa-truck-loading"></i>
+                            </div>
+                            <div class="stakeholder-info">
+                                <h4>Proveedores y Aliados</h4>
+                                <p>Socios comerciales que proporcionan tecnología y componentes para nuestras soluciones.</p>
+                            </div>
+                        </div>
+                        <div class="stakeholder-item">
+                            <div class="stakeholder-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <div class="stakeholder-info">
+                                <h4>Comunidad y Sociedad</h4>
+                                <p>Compromiso con el desarrollo social y contribución a la seguridad comunitaria.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Matriz de Interesados -->
+            <div class="stakeholder-matrix">
+                <h3>Matriz de Relación con Interesados</h3>
+                <div class="matrix-grid">
+                    <div class="matrix-item high-power">
+                        <h4>Alto Poder / Alto Interés</h4>
+                        <ul>
+                            <li>Directivos y Propietarios</li>
+                            <li>Clientes Corporativos</li>
+                            <li>Inversores Principales</li>
+                        </ul>
+                    </div>
+                    <div class="matrix-item high-interest">
+                        <h4>Bajo Poder / Alto Interés</h4>
+                        <ul>
+                            <li>Empleados</li>
+                            <li>Clientes Individuales</li>
+                            <li>Comunidad Local</li>
+                        </ul>
+                    </div>
+                    <div class="matrix-item high-power">
+                        <h4>Alto Poder / Bajo Interés</h4>
+                        <ul>
+                            <li>Entidades Regulatorias</li>
+                            <li>Grandes Proveedores</li>
+                            <li>Bancos e Instituciones Financieras</li>
+                        </ul>
+                    </div>
+                    <div class="matrix-item low-interest">
+                        <h4>Bajo Poder / Bajo Interés</h4>
+                        <ul>
+                            <li>Proveedores Menores</li>
+                            <li>Competencia Indirecta</li>
+                            <li>Público General</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Equipo Completa -->
+    <section id="equipo" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestro Equipo</h2>
+                <p>Conoce a los profesionales que hacen posible nuestra excelencia</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Tarjeta 1: Directora General -->
+                <div class="team-card">
+                    <div class="card-image">
+                        <img src="imagenes/equipo/blanca-judith.jpg" alt="Blanca Judith Flores Bonilla">
+                        <div class="card-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:bl04ju09fl17@gmail.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Blanca Judith Flores Bonilla</h3>
+                        <p class="position">Directora General</p>
+                        <p class="description">Liderazgo visionario con 15+ años de experiencia en tecnología y gestión empresarial</p>
+                        <div class="skills">
+                            <span>Estrategia</span>
+                            <span>Liderazgo</span>
+                            <span>Innovación</span>
+                            <span>Gestión</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Gerente de Operaciones -->
+                <div class="team-card">
+                    <div class="card-image">
+                        <img src="imagenes/equipo/jan-ulises.jpg" alt="Jan Ulises Bautista Muñoz">
+                        <div class="card-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:ulisesjanbm@gmail.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Jan Ulises Bautista Muñoz</h3>
+                        <p class="position">Gerente de Operaciones</p>
+                        <p class="description">Especialista en optimización de procesos y gestión eficiente de operaciones técnicas</p>
+                        <div class="skills">
+                            <span>Gestión</span>
+                            <span>Logística</span>
+                            <span>Optimización</span>
+                            <span>Procesos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Técnico Erick Manuel -->
+                <div class="team-card">
+                    <div class="card-image">
+                        <img src="imagenes/equipo/erick.jpg" alt="Erick Manuel Desion Hernández">
+                        <div class="card-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:manueldesion22@gmail.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Erick Manuel Desion Hernández</h3>
+                        <p class="position">Técnico Especialista</p>
+                        <p class="description">Especialista en implementación técnica y resolución de problemas complejos en seguridad vehicular</p>
+                        <div class="skills">
+                            <span>Instalación</span>
+                            <span>Electrónica</span>
+                            <span>Soporte</span>
+                            <span>Innovación</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: Fernanda Hernández -->
+                <div class="team-card">
+                    <div class="card-image">
+                        <img src="imagenes/equipo/marta-villegas.jpg" alt="Maria Guadalupe Villegas Cano">
+                        <div class="card-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:lupitavillegascano2099@gmail.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Maria Guadalupe Villegas Cano</h3>
+                        <p class="position">Especialista en Ventas</p>
+                        <p class="description">Profesional en atención al cliente y desarrollo de estrategias comerciales personalizadas</p>
+                        <div class="skills">
+                            <span>Ventas</span>
+                            <span>Atención</span>
+                            <span>Comunicación</span>
+                            <span>Clientes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5: Marta Villegas -->
+                <div class="team-card">
+                    <div class="card-image">
+                        <img src="imagenes/equipo/fernanda-hernandez.jpg" alt="Fernanda Hernández Muñoz">
+                        <div class="card-overlay">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="mailto:fh7130612@gmail.com"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fernanda Hernández Muñoz</h3>
+                        <p class="position">Contadora General</p>
+                        <p class="description">Experta en gestión financiera y contabilidad con enfoque en resultados y optimización</p>
+                        <div class="skills">
+                            <span>Contabilidad</span>
+                            <span>Finanzas</span>
+                            <span>Análisis</span>
+                            <span>Gestión</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agrega esta tarjeta en la sección del equipo, después de la última tarjeta -->
+<div class="team-card">
+    <div class="card-image">
+        <img src="imagenes/equipo/Tellez.jpg" alt="Fernando Gabriel Parra Téllez">
+        <div class="placeholder-avatar">
+            <i class="fas fa-broom"></i>
+        </div>
+        <div class="card-overlay">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:limpieza@globaltech.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="card-content">
+        <h3>Fernando Gabriel Parra Téllez</h3>
+        <p class="position">Jefe de Operaciones de Limpieza Y Servicios Generales</p>
+        <p class="description">Profesional especializado en gestión de limpieza y mantenimiento de instalaciones</p>
+        <div class="skills">
+            <span>Limpieza</span>
+            <span>Mantenimiento</span>
+            <span>Logística</span>
+            <span>Gestión</span>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto Mejorada -->
+    <section id="contacto" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contáctanos</h2>
+                <p>Estamos aquí para ayudarte. Selecciona el área que deseas contactar</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    
+                    <div class="contact-team">
+                        <h4>Equipo Directivo</h4>
+                        <div class="team-contact-item">
+                            <div class="contact-avatar">
+                                <img src="imagenes/equipo/blanca-judith.jpg" alt="Blanca Judith">
+                            </div>
+                            <div class="contact-details">
+                                <h5>Blanca Judith Flores</h5>
+                                <p>Directora General</p>
+                                <p>+52 247 216 7474</p>
+                                <a h ref="mailto:bl04ju09fl17@gmail.com">bl04ju09fl17@gmail.com</a> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-team">
+                        <h4>Área Técnica</h4>
+                        <div class="team-contact-item">
+                            <div class="contact-avatar">
+                                <img src="imagenes/equipo/jan-ulises.jpg" alt="Jan Ulises">
+                            </div>
+                            <div class="contact-details">
+                                <h5>Jan Ulises Bautista</h5>
+                                <p>Gerente de Operaciones</p>
+                                <p>+52 246 238 3493</p>
+                                <a href="mailto:ulisesjanbm@gmail.com">ulisesjanbm@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="team-contact-item">
+                            <div class="contact-avatar">
+                                <img src="imagenes/equipo/erick.jpg" alt="Erick Manuel">
+                            </div>
+                            <div class="contact-details">
+                                <h5>Erick Manuel Desion</h5>
+                                <p>Técnico Especialista</p>
+                                <p>+52 241 174 3050</p>
+                                <a href="mailto:manueldesion22@gmail.com">manueldesion22@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-team">
+                        <h4>Área Comercial</h4>
+                        <div class="team-contact-item">
+                            <div class="contact-avatar">
+                                <img src="imagenes/equipo/marta-villegas.jpg" alt="Marta">
+                            </div>
+                            <div class="contact-details">
+                                <h5>Maria Villegas</h5>
+                                <p>Especialista en Ventas</p>
+                                <p>+52 241 132 9191</p>
+                                <a href="mailto:lupitavillegascano2099@gmail.com">lupitavillegascano2099@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-team">
+                        <h4>Área Financiera</h4>
+                        <div class="team-contact-item">
+                            <div class="contact-avatar">
+                                <img src="imagenes/equipo/fernanda-hernandez.jpg" alt="Fernanda">
+                            </div>
+                            <div class="contact-details">
+                                <h5>Fernanda Hernández</h5>
+                                <p>Contadora General</p>
+                                <p>+52 246 104 0379</p>
+                                <a href="mailto:fh7130612@gmail.com">fh7130612@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agrega esto en la sección de contacto, después del Área Financiera -->
+<div class="contact-team">
+    <h4>Área de Servicios Generales</h4>
+    <div class="team-contact-item">
+        <div class="contact-avatar">
+             <img src="imagenes/equipo/Tellez.jpg" alt="Tellez">
+            <i class="fas fa-broom"></i>
+        </div>
+        <div class="contact-details">
+            <h5>Jefe de Operaciones</h5>
+            <p>Limpieza y Servicios Generales</p>
+            <p>+52 241 135 2740 </p>
+            <a href="mailto:limpieza@globaltech.com">limpieza@globaltech.com</a>
+        </div>
+    </div>
+</div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Teléfono General</h4>
+                            <p>+52 (55) 1234 5678</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Horario de Atención</h4>
+                            <p>Lunes - Viernes: 9:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form id="contactForm" onsubmit="handleContactForm(event)">
+                        <div class="form-group">
+                            <label for="contactDepartment">¿A qué área deseas contactar?</label>
+                            <select id="contactDepartment" name="department" required onchange="updateRecipientEmail()">
+                                <option value="">Selecciona un área</option>
+                                <option value="direccion" data-email="bl04ju09fl17@gmail.com">Dirección General</option>
+                                <option value="operaciones" data-email="ulisesjanbm@gmail.com">Operaciones Técnicas</option>
+                                <option value="soporte" data-email="manueldesion22@gmail.com">Soporte Técnico</option>
+                                <option value="ventas" data-email="fh7130612@gmail.com">Ventas y Cotizaciones</option>
+                                <option value="contabilidad" data-email="lupitavillegascano2099@gmail.com">Contabilidad y Facturación</option>
+                                <option value="general" data-email="info@globaltech.com">Consulta General</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="recipientEmail">Correo del destinatario</label>
+                            <input type="email" id="recipientEmail" name="recipient" readonly placeholder="Selecciona un área primero">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Tu Nombre Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Tu Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Tu Teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Asunto del Mensaje</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Describe tu consulta o solicitud..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje al Área Seleccionada
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="imagenes/logo.jpg" alt="GlobalTech">
+                        <span>GlobalTech Security</span>
+                    </div>
+                    <p>Protegiendo lo que más importa con tecnología de vanguardia en seguridad vehicular</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#identidad">Identidad</a></li>
+                        <li><a href="#interesados">Interesados</a></li>
+                        <li><a href="#equipo">Equipo</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto General</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal #123, CDMX</p>
+                    <p><i class="fas fa-phone"></i> +52 (55) 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@globaltech.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Suscríbete para recibir tips de seguridad y promociones</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button type="submit"><i class="fas fa-shield-alt"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GlobalTech Security Solutions. Todos los derechos reservados. | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
